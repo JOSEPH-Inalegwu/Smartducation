@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    /* background-color: rgb(68, 31, 162); */
+    background-color: rgb(16, 69, 93);
+    /* background-color: rgb(20, 91, 156); */
+}
+
+header nav {
+    width: 70%;
+    height: 80px;
+    /* border: 2px solid magenta; */
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    cursor: pointer;
+    /* border: 1px solid magenta; */
+}
+
+header nav .logo img {
+    width: 5em;
+    height: 4em;
+}
+
+header nav .logo h4 {
+    color: rgb(22, 171, 240);
+    font-family: "Rowdies", sans-serif;
+    font-size: 14px;
+}
+
+header nav .user-link {
+    display: flex;
+    align-items: center;
+}
+
+header nav .user {
+     display: flex;
+     align-items: center;
+}
+
+header nav .user li {
+    list-style: none;
+    margin-left: 20px;
+    /* border: 1px solid magenta; */
+}
+
+header nav .user li a {
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+header nav .user li a img {
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+    transition: all .3s ease-in-out;
+    border-radius: 50%;
+}
+
+header nav .user .notify-icon {
+    width: 13.5px;
+    height: 13px;
+    font-size: 10px;
+    color: #fff;
+    background: #ff0000;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -2em;
+    left: 2.6em;
+}
+
+header nav .user .notify-icon p {
+    font-size: 8px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+ul li a:hover {
+    transition: .4s ease-in-out;
+    color: rgb(21, 162, 228);
+}
+
+ul li a:active {
+    color: rgb(21, 162, 228);
+}
+
+header nav .outline {
+    display: inline-block;
+    
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+  
+  header nav .outline:hover {
+    border: 1px solid #fff;
+  }
+
+header nav .outline img {
+    width: 3em;
+    height: auto;
+    position: relative;
+}
+
+header nav .user .outline .quantity {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 18px;
+    right: 204.8px;
+    width: 26px;
+    text-align: center;
+}
+
+
+header section {
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+}
+
+header section .left-section, .right-section {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+}
+
+header section .left-section {
+    padding-top: 25px;
+}
+
+header section .left-section h3 {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 54px;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    line-height: 1;     
+}
+
+header section .left-section p {
+    color: #ffffff;
+    margin: 25px 0;
+    line-height: 1.5;
+}
+
+header section .left-section button {
+    padding: 14px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    background-color: rgb(33, 151, 206);
+    color: #fff;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+header section .left-section button:hover {
+    background-color: #fff;
+    color: rgb(16, 69, 93);
+}
+
+
+header section .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+header section .right-section img {
+    position: absolute;
+    transform: translateX(-55%);
+    left: 65%;
+}
+
+header section .right-section .man {
+    position: absolute;
+    top: 88px;
+}
+
+header section .right-section .shape {
+    position: relative;
+    z-index: -1;
+}
