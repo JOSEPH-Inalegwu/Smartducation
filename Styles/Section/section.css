@@ -6,7 +6,7 @@
 
 #section-a h3 {
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 800;
 }
 
@@ -85,23 +85,26 @@
 
 /* section-b */
 #section-b {
-    width: 70%;
-    height: 65vh;
+    width: 100%;
+    /* height: 86vh; */
     margin: 55px auto;
-    border: 2px solid magenta;
+    padding-top: 40px;
+    background-color: rgb(206, 237, 252);
+    /* border: 2px solid magenta; */
 }
 
 #section-b h3 {
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 800;
+    margin-bottom: 30px;
 }
 
 #section-b .section-b-container {
-    width: 100%;
+    width: 70%;
     height: 90%;
     margin: 15px auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
 }
 
@@ -109,11 +112,13 @@
     width: 50%;
     height: 100%;
     margin: auto;
-    border: 1px solid #ce0a0a;
+    /* border: 1px solid #ce0a0a; */
 }
 
 #section-b .section-b-left {
     display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 0;
     position: relative;
 }
@@ -122,11 +127,11 @@
     position: absolute;
     transform: translateX(-49%);
     left: 40%;
+   
 } */
 
 #section-b .section-b-left .happy-woman {
     position: absolute;
-    top: -35px;
     left: -108px;
     transform: scaleX(-1);
 }
@@ -135,5 +140,23 @@
     position: relative;
     z-index: -1;
     transform: scaleX(-1);
-    left: -30px;
+    width: 520px;
+}
+
+
+#section-b .section-b-right .content {
+    /* border: 1px solid green; */
+    margin: 0px 0px 0px 30px;
+}
+
+#section-b .section-b-right .content h4 {
+    margin-bottom: 6px;
+    color: rgb(8, 43, 59);
+}
+
+#section-b .section-b-right .content p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: rgb(16, 69, 93);
 }
