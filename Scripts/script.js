@@ -15,7 +15,7 @@ function countdownNumber(elementId, initialValue) {
     const modules = document.querySelector('#modules');
 
     const moduleInterval = setInterval(() => {
-        value += 5;
+        value += 4;
         modules.innerHTML = value;
         if(value === 5000) {
             clearInterval(moduleInterval);
