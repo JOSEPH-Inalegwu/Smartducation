@@ -1,54 +1,93 @@
-function countdownNumber(elementId, initialValue) {
-    let value = initialValue;
-    const element = document.getElementById('students');
-    const intervalId = setInterval(() => {
-      value += 8;
-      element.innerHTML = value;
-      if (value === 10000) {
-        clearInterval(intervalId);
-      }
-    });
-  }
+const counters = document.querySelectorAll('.counters span');
+const container = document.querySelector('.counters');
 
-  function modulesContdown(modulesId, modulesInitial) {
-    let value = modulesInitial;
-    const modules = document.querySelector('#modules');
+let activated = false;
 
-    const moduleInterval = setInterval(() => {
-        value += 4;
-        modules.innerHTML = value;
-        if(value === 5000) {
-            clearInterval(moduleInterval);
+window.addEventListener('scroll', () => {
+  if (pageYOffset > container.offsetTop - container.offsetHeight - 200 && activated === false) {
+    counters.forEach(counter => {
+      counter.innerHTML = 0;
+
+      let count = 0;
+
+      function updateCount() {
+        const target = parseInt(counter.dataset.count);
+
+        if(count < target) {
+          count +=10;
+
+          counter.innerHTML = count;
+
+          setTimeout(updateCount, 10)
+        } else {
+          counter.innerHTML = target;
         }
+      }
+      updateCount();
+
+      activated = true;
+    })
+  } else if (pageYOffset < container.offsetTop - container.offsetHeight - 400 || pageYOffset === 0 && activated === true) {
+    counters.forEach(counter => {
+      counter.innerHTML = 0;
     });
+    activated = false;
   }
-
-  countdownNumber("students", 0);
-  modulesContdown("modules", 0)
+})
 
 
+// function countdownNumber(elementId, initialValue) {
+//     let value = initialValue;
+//     const element = document.getElementById('students');
+//     const intervalId = setInterval(() => {
+//       value += 8;
+//       element.innerHTML = value;
+//       if (value === 10000) {
+//         clearInterval(intervalId);
+//       }
+//     });
+//   }
 
-var schoolsAndStudents = document.querySelector('#schools')
-var yearsOfExperience = document.querySelector('#experience')
+
+//   function modulesContdown(modulesId, modulesInitial) {
+//     let value = modulesInitial;
+//     const modules = document.querySelector('#modules');
+
+//     const moduleInterval = setInterval(() => {
+//         value += 4;
+//         modules.innerHTML = value;
+//         if(value === 5000) {
+//             clearInterval(moduleInterval);
+//         }
+//     });
+//   }
+
+//   countdownNumber("students", 0);
+//   modulesContdown("modules", 0)
 
 
-const schoolInterval = setInterval(() => {
-    let schoolInitial = schoolsAndStudents.innerHTML;
-    schoolInitial++
-    schoolsAndStudents.innerHTML = schoolInitial
-    if(schoolInitial === 48) {
-        clearInterval(schoolInterval)
-    }
-}, 130);
 
-const experienceInterval = setInterval(() => {
-    let experienceInitial = yearsOfExperience.innerHTML;
-    experienceInitial++;
-    yearsOfExperience.innerHTML = experienceInitial
-    if(experienceInitial === 10) {
-        clearInterval(experienceInterval)
-    }
-}, 600);
+// var schoolsAndStudents = document.querySelector('#schools')
+// var yearsOfExperience = document.querySelector('#experience')
+
+
+// const schoolInterval = setInterval(() => {
+//     let schoolInitial = schoolsAndStudents.innerHTML;
+//     schoolInitial++
+//     schoolsAndStudents.innerHTML = schoolInitial
+//     if(schoolInitial === 48) {
+//         clearInterval(schoolInterval)
+//     }
+// }, 130);
+
+// const experienceInterval = setInterval(() => {
+//     let experienceInitial = yearsOfExperience.innerHTML;
+//     experienceInitial++;
+//     yearsOfExperience.innerHTML = experienceInitial
+//     if(experienceInitial === 10) {
+//         clearInterval(experienceInterval)
+//     }
+// }, 600);
 
 
 
