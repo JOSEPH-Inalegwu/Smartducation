@@ -41,7 +41,7 @@ header {
 
 .product-container {
   /* border: 1px solid black; */
-  padding: 20px 20px 20px 20px;
+  padding: 35px 15px 35px 15px;
   
 
   border-right: 1px solid rgb(231, 231, 231);
@@ -68,6 +68,12 @@ header {
   font-weight: 600;
   color: rgb(16, 69, 93);
   /* border: 1px solid #000; */
+}
+
+.course-tutor {
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: rgb(1, 124, 182);
 }
 
 .product-rating-container {

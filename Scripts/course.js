@@ -16,6 +16,10 @@ courses.forEach(course => {
         <div class="product-name limit-text-to-2-lines">
            ${course.name}
         </div>
+
+        <div class="course-tutor">
+            ${course.tutor}
+        </div>
     
         <div class="product-rating-container">
         <img class="product-rating-stars"
