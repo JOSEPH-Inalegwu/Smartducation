@@ -16,11 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Play:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- To checkout section link -->
-    <link rel="stylesheet" href="/Styles/Section/checkout.css">
+    <!-- Top course section link -->
+    <link rel="stylesheet" href="/Styles/Section/section.css">
 
     <!-- Footer link style -->
     <link rel="stylesheet" href="/Styles/Footer/footer.css">
+ 
+    <link rel="stylesheet" href="/Styles/Section/cart-content.css">
     
 </head>
 <body>
@@ -34,10 +36,10 @@
         
          <div class="user-link">
              <ul>
-                 <li><a href="/Html/index.html" class="home">Home</a></li>
-                 <li><a href="" class="about">About Us</a></li>
-                 <li><a href="/Html/courses.html" class="courses">Courses</a></li> 
-                 <li><a href="" class="contact">Contact Us</a></li>
+                <li><a href="/Html/index.html" class="home">Home</a></li>
+                <li><a href="" class="about">About Us</a></li>
+                <li><a href="/Html/courses.html" class="courses">Courses</a></li> 
+                <li><a href="" class="contact">Contact Us</a></li>
              </ul>
  
              <div class="user">
@@ -45,30 +47,28 @@
                      <a href="">
                          <img src="/Images/Testimonials/image-victor.jpg">
                          <div class="notify-icon">
-                             <p>10</p>
+                             <p>8</p>
                          </div>
                      </a>
                  </li>
                  <div class="outline">
                      <img src="/Images/Icons/cart-icon.png">
-                     <div class="quantity">
+                     <div class="quantity js-cart-quantity">
                         
                      </div>
                  </div>
              </div>
          </div>
          </nav>
+        </header>
 
-    </header>
+     <!-- course section starts  -->
+    <div class="main">
+        <h1>Shopping Cart</h1>
+        <h4>2 Courses in Cart</h4>
 
-          
-    <section id="section-d">
-        <h4>Testimonials</h4>
-        <h3>Learners Like You Are Achieving Their Goals</h3>
-        <div class="section-d-container">
-            <div class="section-d-left">
-                
-
+        <div class="main-wrapper">
+            <div class="main-left">
                 <div class="cart-content-container">
                     <div class="cart-img">
                       <img src="/Images/Courses/digital-marketing.png">
@@ -83,6 +83,7 @@
                         <p>88.7 total hours</p>
                         <p>678 lectures</p>
                         <p>All Levels</p>
+                        <p class="price">$28.99</p>
                       </div>
             
                       <a href="" class="remove-course">Remove</a>
@@ -103,30 +104,30 @@
                         <p>75.9 total hours</p>
                         <p>625 lectures</p>
                         <p>All Levels</p>
+                        <p class="price">$40.89</p>
                       </div>
             
                       <a href="" class="remove-course">Remove</a>
                     </div>
                 </div>
-
-
             </div>
 
-
-            <div class="section-d-right" id="testimonialContainer">
-                <!-- Generating it using javascript  -->
-
-                <!-- <div class="testimonial">
-                    <img src="/Images/Testimonials/1712481294302.jpg">
-                    <h4>Jack Thompson</h4>
-                    <p> I wasn't sure if online learning was for me, but Smartducation proved me wrong! 
-                        The program's user-friendly interface and dynamic courses have made my learning 
-                        experience enjoyable and rewarding</p>
-                </div>            -->
+            <div class="main-right">
+                <div class="checkout">
+                      <h4>Total:</h4>
+                      <h2>$245</h2>
+                      <a href="#" class="checkout-link">checkout</a>
+                    
+                      <div class="promotion">
+                      <h3>Promotions</h3>
+                      <p><b>Smartducation</b> Tech the World</p>
+                      <input type="text" placeholder="Enter Coupon"><a href="" class="apply">Apply</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    
+    </div>
+
 
     <footer>
         <div class="footer-wrapper">
@@ -171,5 +172,7 @@
        </div>
     </footer>
 
+    <script type="module" src="/Scripts/course.js"></script>
+    <script src="/Scripts/Modules/activeNavLink.js"></script>
 </body>
 </html>
