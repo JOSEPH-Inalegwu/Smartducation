@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
 })
 
 
-// Storing the users data
+// Storing the users data testimonials
 var testimonials = [
   {
       name: "Jack Thompson",

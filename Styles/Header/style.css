@@ -219,3 +219,10 @@ header section .right-section .shape {
     position: relative;
     z-index: -1;
 }
+
+/* Active Nav Link Style */
+.active-link {
+    color: rgb(22, 171, 240);
+    font-weight: 700;
+    text-decoration: underline;
+}
