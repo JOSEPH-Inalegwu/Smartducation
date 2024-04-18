@@ -1,5 +1,5 @@
 import { courses } from "./Modules/course-data.js";
-import { cart } from "./Modules/cart.js";
+import { cart, addCourseToCart } from "./Modules/cart.js";
 
 //Generating the course html
 let coursesHTML = '';
@@ -57,23 +57,8 @@ document.querySelectorAll('.js-add-to-cart').forEach(button => {
     button.addEventListener('click', () => {
        const courseId = button.dataset.courseId;
        
-
-       let matchingItem;
-
-        cart.forEach((courseItem) => {
-            if(courseId === courseItem.courseId) {
-                matchingItem = courseItem;
-            }
-        });
-
-        if(matchingItem) {
-            matchingItem.quantity++;
-        } else {
-            cart.push({
-                courseId: courseId,
-                quantity: 1
-            });
-        };
+        //Adds a course to the cart
+        addCourseToCart();
 
         let cartQuantity = 0;
 
@@ -81,7 +66,7 @@ document.querySelectorAll('.js-add-to-cart').forEach(button => {
             cartQuantity += courseItem.quantity;
         });
 
-        document.querySelector('.js-cart-quantity')
+    document.querySelector('.js-cart-quantity')
         .innerHTML = cartQuantity;
 
 
