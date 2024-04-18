@@ -53,14 +53,8 @@ courses.forEach(course => {
 document.querySelector('.js-products-grid').innerHTML = coursesHTML;
 
 
-document.querySelectorAll('.js-add-to-cart').forEach(button => {
-    button.addEventListener('click', () => {
-       const courseId = button.dataset.courseId;
-       
-        //Adds a course to the cart
-        addCourseToCart();
-
-        let cartQuantity = 0;
+function updateCourseQuantity() {
+    let cartQuantity = 0;
 
         cart.forEach((courseItem) => {
             cartQuantity += courseItem.quantity;
@@ -68,7 +62,16 @@ document.querySelectorAll('.js-add-to-cart').forEach(button => {
 
     document.querySelector('.js-cart-quantity')
         .innerHTML = cartQuantity;
+}
 
+document.querySelectorAll('.js-add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+       const courseId = button.dataset.courseId;
+       
+        //Adds a course to the cart
+        addCourseToCart(courseId);
+
+        updateCourseQuantity();
 
         //Displays the added message pop-up
         var addedMsg = document.querySelector

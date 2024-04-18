@@ -52,8 +52,7 @@ document.querySelectorAll('.js-remove-course')
         const courseId = removeLink.dataset.courseId;
         removeFromCart(courseId);
 
-        const container = document.querySelector(
-            `.js-cart-content-container-${courseId}`);
+        const container = document.querySelector(`.js-cart-content-container-${courseId}`);
 
         container.remove();
 
