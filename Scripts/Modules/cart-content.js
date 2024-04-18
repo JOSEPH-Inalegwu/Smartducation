@@ -29,8 +29,8 @@ cart.forEach((courseItem) => {
             <img src="/Images/ratings/rating-${matchingCourses.rating.stars * 10}.png">
 
             <div class="course-content">
-                <p>88.7 total hours</p>
-                <p>678 lectures</p>
+                <p>${matchingCourses.hour} total hours</p>
+                <p></p>
                 <p>All Levels</p>
                 <p class="price">$${matchingCourses.priceInCent / 100}</p>
             </div>
