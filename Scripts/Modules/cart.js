@@ -1,4 +1,4 @@
-export { cart, addCourseToCart, removeFromCart, savingToLocalStorage };
+export { cart, addCourseToCart, removeFromCart };
 
 let cart = JSON.parse(localStorage.getItem('cart'));
 if(!cart) {
