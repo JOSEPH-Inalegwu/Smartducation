@@ -19,7 +19,8 @@ export function paymentSummary() {
         <div class="promotion">
         <h3>Promotions</h3>
         <p><b>Smartducation</b> Tech the World</p>
-        <input type="text" placeholder="Enter Coupon"><a href="" class="apply">Apply</a>
+        <input type="text" placeholder="Enter Coupon">
+        <a href="" class="apply js-apply">Apply</a>
     </div>
     `;
 
