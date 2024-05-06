@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: rgb(16, 69, 93);
+    /* border: 1px solid #000; */
+}
+
+header nav {
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .web-name {
+    width: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+    color: #fff;
+    background-color: rgb(5, 43, 61);
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+
+nav .logo {
+    cursor: pointer;
+    /* border: 1px solid midnightblue; */
+}
+
+nav .logo img {
+    width: 100px;
+}
+
+/* nav .logo h4 {
+    color: rgb(22, 171, 240);
+    font-size: 14px;
+    font-weight: 800;
+} */
+
+ul {
+    display: none;
+    /* display: flex; */
+}
+
+ul li  {
+    margin: 0 10px;
+    list-style: none;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown img {
+   width: 35px;
+   cursor: pointer;
+}
+
+/* .outline img  {
+    display: block;
+} */
+
+header nav .user {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    position: relative;
+}
+    
+header nav .outline {
+    margin: 0 30px;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+    
+header nav .outline:hover {
+    border: 1px solid #fff;
+}
+
+header nav .outline img {
+    width: 3em;
+    height: auto;
+    /* position: relative; */
+}
+    
+header nav .user .outline .quantity {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    width: 25px;
+    top: 10px;
+    right: 84px;
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+
+
+
+header section {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    /* border: 1px solid #fff; */
+}
+
+header section .left-section {
+    /* border: 1px solid #fff; */
+    margin: 50px auto;
+}
+
+header section .left-section h1 {
+    font-size: 50px;
+    color: rgb(22, 171, 240);
+    font-weight: 800;
+    font-style: normal; 
+    line-height: 1;   
+}
+
+header section .left-section p {
+    font-size: 20px;
+    color: #fff;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+header section .left-section button {
+    padding: 14px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(33, 151, 206);
+    color: #fff;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+header section .left-section button:hover {
+    background-color: #fff;
+    color: rgb(16, 69, 93);
+}
+
+header section .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+header section .right-section img {
+    position: absolute;
+    transform: translateX(-55%);
+    left: 50%;
+}
+
+header section .right-section .man {
+    /* top: 108px; */
+    position: relative;
+    z-index: 1;
+    left: 75%;
+
+}
+
+header section .right-section .shape {
+    position: absolute;
+    max-width: 112%;
+    left: 55%;
+}
+
+
+/*SECTION A*/
+.section-a {
+    width: 90%;
+    padding: 40px 0;
+    margin: auto;
+    /* height: 80%; */
+    /* border: 1px solid magenta; */
+}
+
+.section-a h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.section-a-container {
+    width: 100%;
+    margin: 30px 0;
+    /* border: 1px solid #000; */
+}
+
+.section-a .section-a-container .course-card {
+    width: 100%;
+    margin-bottom: 40PX;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    /* border: 1px solid magenta; */
+
+    background-color: rgba(29, 101, 129, 0.849);
+    transition: filter 0.3s;
+}
+
+.section-a .section-a-container .course-card img {
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.section-a .section-a-container .course-card:hover {
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
+.section-a .section-a-container .course-card .content {
+    /* border: 1px solid #000; */
+    padding: 10px;
+}
+
+.section-a .section-a-container .course-card .content h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.section-a .section-a-container .course-card .content p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: rgb(1, 19, 26);
+}
+
+.section-a .section-a-container .course-card .content img {
+    width: 100px;
+    height: 18px;
+}
+
+.section-a .section-a-container .btn-explore {
+    padding: 18px 28px;
+    border: none;
+    outline: none;
+    background-color: rgb(16, 69, 93);
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.section-a .section-a-container .btn-explore:hover {
+    background-color: #fff;
+    outline: 1px solid rgb(16, 69, 93);
+    color: rgb(16, 69, 93);
+}
+
+
+
+.counters {
+    width: 100%;
+    margin: 40px 0;
+    padding: 80px 0;
+    background-color: rgb(16, 69, 93);
+    color: #fff;
+    text-align: center;
+    /* border: 1px solid magenta; */
+}
+
+.counters > div {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid #fff; */
+}
+
+.counter {
+    position: relative;
+    margin-bottom: 40px;
+    /* border: 1px solid #fff; */
+}
+
+.counters .counter h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.counters .counter p {
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(171, 224, 248);
+}
+
+/* Active Nav Link Style */
+.active-link {
+    color: rgb(22, 171, 240);
+    font-weight: 700;
+    text-decoration: underline;
+}

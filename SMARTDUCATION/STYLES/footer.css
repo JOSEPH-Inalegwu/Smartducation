@@ -1,0 +1,92 @@
+footer {
+    width: 100%;
+    padding: 30px 0;
+    /* border: 2px solid magenta; */
+    background: rgb(16, 69, 93);
+}
+
+footer .footer-wrapper {
+    width: 90%;
+    margin: auto;
+    /* height: 80%; */
+    /* border: 1px solid #fff; */
+}
+
+footer .footer-wrapper .footer-content {
+    width: 100%;
+    /* height: 300px; */
+    margin-top: 50px;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+
+footer .footer-wrapper .footer-content h3 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 800;
+    color: #fff;
+}
+
+footer .footer-wrapper .footer-content p {
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 500;
+    color: #fff;
+}
+
+footer .footer-wrapper .footer-content i {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 28px 0px 0px 0px;
+}
+
+footer .footer-wrapper .footer-content i:hover {
+    color: rgb(22, 171, 240);
+    transition: .2s ease-in-out;
+}
+
+footer .footer-wrapper .footer-content p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-wrapper .footer-content p a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-bottom {
+    width: 90%;
+    margin: auto;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+}
+
+footer .footer-bottom .logo img {
+    width: 60px;
+    height: auto;
+}
+
+footer .footer-bottom .logo h4 {
+    color: rgb(22, 171, 240);
+    font-family: "Rowdies", sans-serif;
+    font-size: 14px;
+}
+
+footer .footer-bottom a {
+    text-decoration: none;
+    color: rgb(16, 69, 93);
+}
+
+footer .footer-bottom .fa-arrow-up {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.6);
+}
