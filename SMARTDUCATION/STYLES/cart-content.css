@@ -176,3 +176,160 @@
 .main-right .checkout .promotion .apply:hover {
   background-color: rgb(42, 114, 148);
 }
+
+
+@media (min-width: 800px) {
+  .main-wrapper {
+    width: 100%;
+    margin: 20px 0;
+    /* border: 1px solid #000; */
+    display: flex;
+   }
+
+   .dropdown {
+    display: none;
+   }
+
+   ul {
+    display: flex;
+   }
+
+   ul li {
+    margin: 0 20px;
+   }
+
+ .main-left {
+  width: 60%;
+  /* border: 1px solid green; */
+ }
+  
+  .cart-img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cart-content-container {
+    border: 1px solid rgb(224, 221, 221);
+    width: 98%;
+    padding: 20px;
+    margin-bottom: 30px;
+    /* display: flex; */
+  }  
+  
+  .course-content {
+    display: flex;
+    margin: 18px 0;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+  }
+  
+ .main-right {
+  width: 40%;
+  /* border: 1px solid blue; */
+ }
+
+ .main-right .checkout {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 14px;
+  margin: auto;
+ }
+
+
+.main-right .checkout .promotion {
+ border: 1px solid #ccc;
+ margin-top: 35px;
+ padding: 10px 5px;
+}
+
+.main-right .checkout .promotion input {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.main-right .checkout .promotion .apply {
+margin-left: 0;
+font-size: 16px;
+padding: 10px 40px;
+}
+
+}
+
+@media (min-width: 1000px) {
+  #header {
+    height: 30vh;
+}
+
+header nav {
+    width: 90%;
+    height: 40%;
+    margin: auto;
+    /* border: 1px solid #000; */
+}
+  .main-wrapper {
+    width: 100%;
+    margin: 20px 0;
+    /* border: 1px solid #000; */
+    display: flex;
+   }
+
+   .dropdown {
+    display: none;
+   }
+
+   ul {
+    display: flex;
+   }
+
+   ul li {
+    margin: 0 20px;
+   }
+
+ .main-left {
+  width: 70%;
+  /* border: 1px solid green; */
+ }
+  
+  .cart-img img {
+    width: 340px;
+    height: 100%;
+  }
+  
+  .cart-content-container {
+    border: 1px solid rgb(224, 221, 221);
+    width: 98%;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+  }  
+  
+  .course-content {
+
+    display: flex;
+    margin: 18px 0;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+  }
+  
+ .main-right {
+  width: 30%;
+  /* border: 1px solid blue; */
+ }
+
+ .main-right .checkout {
+  width: 90%;
+  border: 1px solid #ccc;
+  padding: 14px;
+  margin: auto;
+ }
+
+
+.main-right .checkout .promotion {
+ border: 1px solid #ccc;
+ margin-top: 35px;
+ padding: 10px 5px;
+}
+
+
+
+}
