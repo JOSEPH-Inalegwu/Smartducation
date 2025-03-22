@@ -25,7 +25,7 @@ courses.forEach((course) => {
     
         <div class="product-rating-container">
         <img class="product-rating-stars"
-            src="/SMARTDUCATION/Images/ratings/rating-${course.rating.stars * 10}.png">
+            src="Images/ratings/rating-${course.rating.stars * 10}.png">
         <div class="product-rating-count">
             ${course.rating.count}
         </div>
@@ -39,7 +39,7 @@ courses.forEach((course) => {
 
         <div class="added-to-cart 
         js-added-to-cart-${course.id}">
-        <img src="/SMARTDUCATION/Images/Icons/checkmark.png">
+        <img src="Images/Icons/checkmark.png">
         Added
         </div>
 

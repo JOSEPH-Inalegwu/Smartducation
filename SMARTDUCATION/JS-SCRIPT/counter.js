@@ -41,22 +41,22 @@ window.addEventListener('scroll', () => {
 var testimonials = [
     {
         name: "Jack Thompson",
-        image: "/SMARTDUCATION/Images/Testimonials/1712481294302.jpg",
+        image: "Images/Testimonials/1712481294302.jpg",
         message: "I wasn't sure if online learning was for me, but Smartducation proved me wrong! The program's user-friendly interface and dynamic courses have made my learning experience enjoyable and rewarding."
     },
     {
         name: "Emily P Johnson",
-        image: "/SMARTDUCATION/Images/Testimonials/fifth.jpg",
+        image: "Images/Testimonials/fifth.jpg",
         message: "The interactive lessons and engaging content make learning fun and accessible. Smartducation has equipped me with the skills and knowledge to excel academically and prepare for my future. I'm grateful for this invaluable opportunity!"
     },
     {
         name: "Ethan Rodrygo",
-        image: "/SMARTDUCATION/Images/Testimonials/happy-teenage-boy.jpg",
+        image: "Images/Testimonials/happy-teenage-boy.jpg",
         message: "The comprehensive curriculum and engaging resources have enriched my knowledge and expanded my skill set in ways I never thought possible."
     },
     {
         name: "Sophia Carter",
-        image: "/SMARTDUCATION/Images/Testimonials/fourthFemale.jpg",
+        image: "Images/Testimonials/fourthFemale.jpg",
         message: "As a working professional with a hectic schedule, I was skeptical about online education. The flexibility to learn at my own pace and the clarity of instruction from your dedicated tutors made all the difference"
     }
   ];

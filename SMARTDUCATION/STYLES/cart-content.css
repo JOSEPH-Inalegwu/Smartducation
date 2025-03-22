@@ -178,6 +178,13 @@
 }
 
 
+@media (min-width: 300px) {
+  .main-right .checkout .promotion input {
+   margin-bottom: 30px;
+  }
+}
+
+
 @media (min-width: 800px) {
   .main-wrapper {
     width: 100%;

@@ -21,7 +21,7 @@ cart.forEach((courseItem) => {
             <h4>${matchingCourses.name}</h4>
             <p>${matchingCourses.tutor}</p>
             <span>Bestseller</span>
-            <img src="/SMARTDUCATION/Images/ratings/rating-${matchingCourses.rating.stars * 10}.png">
+            <img src="Images/ratings/rating-${matchingCourses.rating.stars * 10}.png">
 
             <div class="course-content">
                 <p>${matchingCourses.hour}</p>
